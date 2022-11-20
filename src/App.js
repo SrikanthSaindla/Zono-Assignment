@@ -6,7 +6,7 @@ import "./index.css"
 import Cart from './Components/Cart'
 
 import "./App.css"
-import CheckOut from './Components/CheckOut'
+ 
 import Brand from './Components/Brand'
 
  
@@ -44,10 +44,10 @@ const App = () => {
   }
   return (
     <div className='App'>
-      <Brand setbrand={setbrand} length={data}/>
+      <Brand setbrand={setbrand} data={data}/>
        <Products data={data} AddToCart={AddToCart} IncreaseCart={IncreaseCart} brand={brand}/>
        <Cart cart={cart} setCart={setCart}  />
-        <CheckOut cart={cart}/>
+        
     </div>
   )
 }

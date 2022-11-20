@@ -1,0 +1,34 @@
+.brand{
+    background-color: lightpink;
+        height: 100vh;
+        overflow-x: scroll;
+        min-width: 20vw;
+        padding: 2rem 2rem;
+        height: 90vh;
+
+        
+}
+.brand-list{
+    display: flex;
+    
+    gap: 2rem;
+}
+.logoimg{
+    height: 4rem;
+    width: 4rem;
+}
+.brand-container{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    margin-top: 3rem;
+}
+.brand-head{
+    font-weight: 400;
+    font-size: 2rem;
+    padding-bottom: 4rem;
+}
+.b-name{
+    font-weight: 800;
+    font-size: 1.5rem;
+}

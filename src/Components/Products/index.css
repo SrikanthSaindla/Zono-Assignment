@@ -1,0 +1,18 @@
+.products-container{
+    background-color: lightcyan;
+    height: 100vh;
+    overflow-x: scroll;
+    min-width: 40.3vw;
+    border: 2px solid black;
+    
+}
+hr{
+    width: 90%;
+    
+}
+.products-container>span{
+ font-size: 1.5rem;
+ font-weight: 400;
+ padding: 1rem 2rem;
+  
+}
