@@ -1,4 +1,27 @@
  .App{
     display: flex;
-    gap:15rem;
+     
  }
+body{
+   margin: 0;
+   font-family: Tahoma, sans-serif;
+}
+.btn1{
+   background-color: blue;
+   border: none;
+   color: white;
+   padding: .3rem 1rem;
+}
+.btn1:hover{
+   background-color: lightgreen;
+   color:black;
+}
+::-webkit-scrollbar{
+   height: 12px;
+   width: 12px;
+}
+ 
+::-webkit-scrollbar-thumb{
+   background-color: skyblue;
+   border-radius: 1ex;
+}

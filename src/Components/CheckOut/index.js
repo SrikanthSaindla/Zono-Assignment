@@ -1,4 +1,5 @@
 import React,{useState,useEffect,useRef} from 'react'
+import"./index.css"
 
 const CheckOut = (props) => {
     const name=useRef()
@@ -34,19 +35,20 @@ const CheckOut = (props) => {
 
          if(phone1.length !== 10) return alert("Only 10 numbers")
 
-    console.log(cart)
+     console.log(JSON.stringify(cart))
+     return alert("Order Placed")
      }
       
    if(!cart.length<=0){
   return (
-    <div>
-         <h1>Total.number of products:{cart.length}</h1>
-         <h1>{price}</h1>
+    <div className='check'>
+         <span>Total No. of Items : {cart.length}</span>
+         <p>Grand Total : {price}</p>
          <form onSubmit={submitHandler}>
             <input type="text" ref={name} placeholder='Enter name*'/><br/>
             <input type="email" ref={email} placeholder='Enter email*'/><br/>
             <input type="phone" ref={phone} placeholder='Enter Phone*'/><br/>
-            <button type='submit'>CheckOut</button>
+            <button type='submit' className='check-btn'>CheckOut</button>
          </form>
     </div>
   )
